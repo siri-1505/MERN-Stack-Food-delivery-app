@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  
+}
+
+.cravings {
+  position: relative;
+  z-index: 1; /* Bring text to the front */
+  bottom:  20%;
+}
+
+.h1 {
+  font-size: 4rem;
+  gap: 2px;
+  color: white; /* Tomato */
+}
+
+.h2 {
+  font-size: 2rem;
+  color: #FFD700; /* Gold */
+}
+
+.orderNow {
+  font-size: 2rem;
+  animation: moveUpDown 2s infinite;
+  color: #FFD700; /* Lawn Green */
+  
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.noUnderline {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #FFF;
+  background-color: #c953ea; /* Orange Red */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.back {
+  position: relative;
+  z-index: 1;
+  bottom:15%
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+
+  .orderNow {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .orderNow {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .orderNow {
+    font-size: 1.25rem;
+  }
+
+  .noUnderline {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

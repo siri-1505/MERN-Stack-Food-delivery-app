@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden; /* Ensure content overflow is hidden */
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.9;
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .heading{
+    color:aqua;
+  }
+
+  .input{
+    width: 80%; /* Adjust width as needed */
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  }
+  
+  .input[type="text"]::placeholder {
+    color: #ccc;
+  }
+  .navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .arrow {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .arrow:hover {
+    color: #ccc; /* Hover color */
+  }
+  

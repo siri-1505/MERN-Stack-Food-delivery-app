@@ -1,0 +1,137 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.modalContent {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+  
+.h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+  
+.li p {
+    margin: 0;
+    max-width: 50%;
+    color: #555;
+}
+  
+.li span {
+    font-weight: bold;
+}
+  
+.addbutton {
+    background: #ff6347;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+  
+.addbutton:hover {
+    background: #ff4500;
+}
+  
+.quantityContainer {
+    display: flex;
+    align-items: center;
+}
+  
+.quantity {
+    padding: 0 10px;
+}
+  
+.totalPrice {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+  
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.buttonContainer button {
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    flex: 1;
+}
+  
+.buttonContainer button:hover {
+    background: #0056b3;
+}
+  
+.buttonContainer button:last-child {
+    background: #28a745;
+}
+  
+.buttonContainer button:last-child:hover {
+    background: #218838;
+}
+  
+.buttonContainer button:first-child {
+    background: #dc3545;
+}
+  
+.buttonContainer button:first-child:hover {
+    background: #c82333;
+}
+  
+.link {
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 5px;
+    flex: 1;
+}
+  
+.link:hover {
+    background: #e0a800;
+}

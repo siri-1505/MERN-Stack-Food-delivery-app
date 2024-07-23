@@ -1,0 +1,26 @@
+/* Cart.css */
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  

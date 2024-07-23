@@ -1,0 +1,95 @@
+/* Login.module.css */
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Adjust opacity as needed */
+}
+
+.form {
+  position: relative;
+  z-index: 1; /* Ensure the form is on top of the overlay */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff; 
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* Adjust text color */
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff; /* Adjust text color */
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Adjust placeholder text color */
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.message {
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: #fff; /* Adjust text color */
+}
+
+.link {
+  color:orange; /* Adjust link color */
+  text-decoration: none;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: green;
+}
+
+.button:hover {
+  background-color:goldenrod;
+}
